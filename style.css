@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0077be, #00a8cc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="800" r="20" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="800;680;560;440;320;200" dur="8s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.4;0.6;0.4;0.2" dur="8s" begin="0s" repeatCount="indefinite"/></circle><circle cx="400" cy="600" r="15" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="600;500;400;300;200;100" dur="10s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.5;0.7;0.5;0.2" dur="10s" begin="2s" repeatCount="indefinite"/></circle><circle cx="600" cy="700" r="25" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="700;600;500;400;300;200" dur="12s" begin="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.4;0.6;0.4;0.2" dur="12s" begin="4s" repeatCount="indefinite"/></circle><circle cx="800" cy="500" r="18" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="500;400;300;200;100;0" dur="9s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.5;0.7;0.5;0.2" dur="9s" begin="1s" repeatCount="indefinite"/></circle><circle cx="100" cy="900" r="12" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="900;800;700;600;500;400" dur="11s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.4;0.6;0.4;0.2" dur="11s" begin="3s" repeatCount="indefinite"/></circle><circle cx="500" cy="850" r="22" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="850;750;650;550;450;350" dur="13s" begin="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.5;0.7;0.5;0.2" dur="13s" begin="5s" repeatCount="indefinite"/></circle><circle cx="700" cy="550" r="16" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="550;450;350;250;150;50" dur="10s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.4;0.6;0.4;0.2" dur="10s" begin="0.5s" repeatCount="indefinite"/></circle><circle cx="300" cy="750" r="14" fill="rgba(255,255,255,0.2)"><animate attributeName="cy" values="750;650;550;450;350;250" dur="12s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.5;0.7;0.5;0.2" dur="12s" begin="2.5s" repeatCount="indefinite"/></circle><g id="fish1"><ellipse cx="150" cy="700" rx="20" ry="10" fill="rgba(255,255,255,0.3)" transform="rotate(15 150 700)"/><circle cx="140" cy="695" r="2" fill="rgba(0,0,0,0.4)"/><path d="M170 700 Q180 690 170 685" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/><animate attributeName="cx" values="150;200;250;300;350;400" dur="15s" begin="0s" repeatCount="indefinite"/><animate attributeName="cy" values="700;680;660;640;620;600" dur="15s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.1;0.3;0.5;0.3;0.1" dur="15s" begin="0s" repeatCount="indefinite"/></g><g id="fish2"><ellipse cx="750" cy="800" rx="18" ry="9" fill="rgba(255,255,255,0.25)" transform="rotate(-10 750 800)"/><circle cx="740" cy="795" r="1.5" fill="rgba(0,0,0,0.3)"/><path d="M768 800 Q778 790 768 785" stroke="rgba(255,255,255,0.25)" stroke-width="1" fill="none"/><animate attributeName="cx" values="750;700;650;600;550;500" dur="18s" begin="3s" repeatCount="indefinite"/><animate attributeName="cy" values="800;780;760;740;720;700" dur="18s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.05;0.25;0.4;0.25;0.05" dur="18s" begin="3s" repeatCount="indefinite"/></g><g id="fish3"><ellipse cx="400" cy="600" rx="22" ry="11" fill="rgba(255,255,255,0.2)" transform="rotate(5 400 600)"/><circle cx="390" cy="595" r="2.5" fill="rgba(0,0,0,0.3)"/><path d="M422 600 Q432 590 422 585" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/><animate attributeName="cx" values="400;450;500;550;600;650" dur="20s" begin="6s" repeatCount="indefinite"/><animate attributeName="cy" values="600;620;640;660;680;700" dur="20s" begin="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.2;0.4;0.2;0" dur="20s" begin="6s" repeatCount="indefinite"/></g><g id="fish4"><ellipse cx="900" cy="500" rx="16" ry="8" fill="rgba(255,255,255,0.35)" transform="rotate(-25 900 500)"/><circle cx="892" cy="495" r="1.8" fill="rgba(0,0,0,0.4)"/><path d="M916 500 Q926 490 916 485" stroke="rgba(255,255,255,0.35)" stroke-width="1.2" fill="none"/><animate attributeName="cx" values="900;850;800;750;700;650" dur="12s" begin="1s" repeatCount="indefinite"/><animate attributeName="cy" values="500;520;540;560;580;600" dur="12s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.1;0.35;0.5;0.35;0.1" dur="12s" begin="1s" repeatCount="indefinite"/></g><g id="jumping-fish"><ellipse cx="850" cy="900" rx="25" ry="12" fill="rgba(255,255,255,0.3)" transform="rotate(-20 850 900)"/><circle cx="835" cy="895" r="3" fill="rgba(0,0,0,0.4)"/><path d="M875 900 Q885 885 875 880" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"/><animate attributeName="cy" values="900;850;800;750;700;900" dur="6s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.4;0.6;0.4;0" dur="6s" begin="0s" repeatCount="indefinite"/></g></svg>');
+    pointer-events: none;
+}
+
+
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.header {
+    background: linear-gradient(90deg, #0077be, #00a8cc);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="m0,60 C150,100 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 z" fill="rgba(255,255,255,0.1)"/></svg>');
+    animation: waveHeader 8s linear infinite;
+}
+
+@keyframes waveHeader {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.header p {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    position: relative;
+    z-index: 1;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f0f8ff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.user-message {
+    background: linear-gradient(135deg, #0077be, #005f8a);
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bot-message {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    color: #0077be;
+    align-self: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.typing-dots span {
+    opacity: 0;
+    animation: blink 1.5s infinite;
+}
+
+.typing-dots span:nth-child(1) { animation-delay: 0s; }
+.typing-dots span:nth-child(2) { animation-delay: 0.5s; }
+.typing-dots span:nth-child(3) { animation-delay: 1s; }
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 0; }
+    25% { opacity: 1; }
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+#user-input:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#send-btn {
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #0077be, #00a8cc);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#send-btn:hover {
+    background: linear-gradient(90deg, #005f8a, #008ba3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#send-btn:active {
+    transform: translateY(0);
+}
+
+.footer {
+    background: linear-gradient(90deg, #0077be, #00a8cc);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    font-size: 0.9em;
+}
